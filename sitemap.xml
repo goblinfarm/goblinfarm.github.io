@@ -1,62 +1,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://goblinfarm.nl/index.html</loc>
+		<loc>http://goblinfarm.github.io/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/contact.html</loc>
+		<loc>http://goblinfarm.github.io/contact.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/hondenkennels.html</loc>
+		<loc>http://goblinfarm.github.io/hondenkennels.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/dagopvang.html</loc>
+		<loc>http://goblinfarm.github.io/dagopvang.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/kattenhotel.html</loc>
+		<loc>http://goblinfarm.github.io/kattenhotel.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/pensionreglement.html</loc>
+		<loc>http://goblinfarm.github.io/pensionreglement.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.75</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/toegang_pension.html</loc>
+		<loc>http://goblinfarm.github.io/toegang_pension.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/over_mijzelf.html</loc>
+		<loc>http://goblinfarm.github.io/over_mijzelf.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/tarieven.html</loc>
+		<loc>http://goblinfarm.github.io/tarieven.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/nieuwsbrief.html</loc>
+		<loc>http://goblinfarm.github.io/nieuwsbrief.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/fotos.html</loc>
+		<loc>http://goblinfarm.github.io/fotos.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://goblinfarm.nl/verplichtingen_en_veiligheid.html</loc>
+		<loc>http://goblinfarm.github.io/verplichtingen_en_veiligheid.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 </urlset>
+
