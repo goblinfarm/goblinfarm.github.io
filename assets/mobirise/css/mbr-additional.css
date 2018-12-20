@@ -6046,6 +6046,24 @@ body {
   padding-bottom: 120px;
   background-image: url("../../../assets/images/mbr-3-1920x1279.jpg");
 }
+.cid-rcMrwhHVut {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f3f4f6;
+}
+.cid-rcMrwhHVut .testimonial-text {
+  font-style: italic;
+  color: #676767;
+  font-weight: 300;
+  text-align: center;
+}
+.cid-rcMrwhHVut .mbr-author-name {
+  font-weight: bold;
+  color: #232;
+}
+.cid-rcMrwhHVut .mbr-author-desc {
+  color: #232;
+}
 .cid-r1tWVFrH6k {
   padding-top: 60px;
   padding-bottom: 60px;
