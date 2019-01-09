@@ -2394,6 +2394,94 @@ body {
 .cid-r1tPmtpLLA .mbr-section-subtitle {
   color: #767676;
 }
+.cid-reDHhZjaHM {
+  padding-top: 90px;
+  padding-bottom: 15px;
+  background-image: url("../../../assets/images/mbr-4-1920x1279.jpg");
+}
+.cid-reDHhZjaHM .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-reDHhZjaHM .container-table {
+  margin: 0 auto;
+}
+.cid-reDHhZjaHM .scroll {
+  overflow-x: auto;
+  padding: 0;
+}
+.cid-reDHhZjaHM .dataTables_wrapper {
+  display: block;
+}
+.cid-reDHhZjaHM .dataTables_wrapper .search {
+  margin-bottom: .5rem;
+}
+.cid-reDHhZjaHM .dataTables_wrapper .table {
+  overflow-x: auto;
+}
+.cid-reDHhZjaHM table {
+  width: 100% !important;
+  margin-top: 6px;
+  border: 1px solid #cccccc;
+  margin-bottom: 0;
+}
+.cid-reDHhZjaHM table th {
+  border-top: none;
+  transition: all .2s;
+  border-bottom: none;
+}
+.cid-reDHhZjaHM table th:hover {
+  background: #cccccc;
+  color: #000000;
+}
+.cid-reDHhZjaHM table td {
+  border-top: 1px solid #cccccc;
+}
+.cid-reDHhZjaHM table.table {
+  background: #ffffff;
+}
+.cid-reDHhZjaHM .dataTables_filter {
+  text-align: right;
+  margin-bottom: .5rem;
+}
+.cid-reDHhZjaHM .dataTables_filter label {
+  display: inline;
+  white-space: normal !important;
+}
+.cid-reDHhZjaHM .dataTables_filter input {
+  display: inline;
+  width: auto;
+  margin-left: .5rem;
+  border-radius: 100px;
+  padding-left: 1rem;
+}
+.cid-reDHhZjaHM .dataTables_info {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: normal !important;
+}
+@media (max-width: 992px) {
+  .cid-reDHhZjaHM .dataTables_filter {
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .cid-reDHhZjaHM .dataTables_filter {
+    text-align: center;
+  }
+  .cid-reDHhZjaHM .dataTables_filter input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+.cid-reDHhZjaHM .mbr-section-title {
+  color: #efefef;
+}
+.cid-reDHhZjaHM .mbr-section-subtitle B {
+  color: #ffffff;
+}
+.cid-reDHhZjaHM .mbr-section-title B {
+  color: #ffffff;
+}
 .cid-r1tNyfY9EA {
   padding-top: 90px;
   padding-bottom: 90px;
