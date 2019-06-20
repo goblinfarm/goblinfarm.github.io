@@ -1782,6 +1782,24 @@ body {
   color: #ffffff;
   text-align: left;
 }
+.cid-rtVD3e8YPh {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+@media (min-width: 992px) {
+  .cid-rtVD3e8YPh .mbr-figure {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-rtVD3e8YPh .mbr-figure {
+    padding-bottom: 1rem;
+  }
+}
+.cid-rtVD3e8YPh .mbr-text {
+  color: #767676;
+}
 .cid-rm7ihX90Lg {
   padding-top: 30px;
   padding-bottom: 15px;
