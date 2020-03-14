@@ -40,7 +40,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 175,
+    "uniqCompNum": 176,
     "versionPublish": "4.9.3",
     "favicon": "@PROJECT_PATH@/assets/images/25353978-912329522262853-6900035582876425386-n-128x128.png",
     "noImageResize": "",
@@ -64,6 +64,131 @@
         "html_before": ""
       },
       "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H1": {
+              "color": "#149dcc"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermvullend\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Toon titel\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Toon ondertitel\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Toon tekst\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Toon knoppen\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Achtergrondafbeelding\" value=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1276.jpg\" parallax selected>\n            <input type=\"color\" title=\"Achtergrondkleur\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Achtergrondvideo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Dekkleur\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Doorschijnendheid\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Welkom op de website van Dierenpension Goblin Farm!</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Per 1 oktober 2017 heb ik, Annabel Faase, dierenpension Goblin Farm overgenomen. Deze overname betekent voor mij dat mijn droom is uitgekomen. Als klein kind had ik al veel met dieren. Thuis hadden we dan ook van alles: van geiten tot kippen, van cavia's tot honden! Met veel liefde en toewijding ben ik dagelijks bezig mijn pensiongasten een zo prettig mogelijk verblijf te geven. \n<br>Kijk rustig rond op onze site, mochten er vragen zijn dan staan wij u graag te woord. \n<br>\n<br>                       ~Annabel</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbr-iconfont mbri-file\"></span>LEER MEER</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rF97w2SLhg",
+          "_anchor": "header1-4e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h2": {
+              "text-align": "left"
+            },
+            "h4": {
+              "text-align": "left",
+              "font-weight": "500"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".aside-content": {
+              "flex-basis": "100%",
+              "-webkit-flex-basis": "100%"
+            },
+            ".block-content": {
+              "display": "-webkit-flex",
+              "flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "word-break": "break-word"
+            },
+            ".media": {
+              "margin": "initial",
+              "align-items": "center",
+              "-webkit-align-items": "center"
+            },
+            ".mbr-figure": {
+              "align-self": "flex-start",
+              "-webkit-align-self": "flex-start",
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0"
+            },
+            ".card-img": {
+              "padding-right": "2rem",
+              "width": "auto"
+            },
+            ".card-img span": {
+              "font-size": "72px",
+              "color": "#707070"
+            },
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              ".media-container-row": {
+                "& when (@reverseContent)": {
+                  "-webkit-flex-direction": "row-reverse"
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "padding-right": "0",
+                "padding-bottom": "1rem",
+                "margin-bottom": "2rem",
+                "& when (@reverseContent)": {
+                  "padding-bottom": "0",
+                  "margin-bottom": "0",
+                  "padding-top": "1rem",
+                  "margin-top": "2rem"
+                }
+              },
+              ".media-container-row": {
+                "& when (@reverseContent)": {
+                  "-webkit-flex-direction": "column-reverse"
+                }
+              }
+            },
+            "@media (max-width: 300px)": {
+              ".card-img span": {
+                "font-size": "40px !important"
+              }
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            }
+          },
+          "_name": "features11",
+          "_customHTML": "<section class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Toon titel\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Toon ondertitel\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Toon hoofding tekst\" name=\"showTextHead\" checked>\n        <input type=\"checkbox\" title=\"Toon tekst\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Toon pictogram\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Media links/rechts\" name=\"reverseContent\">\n        <input type=\"range\" inline title=\"Media formaat\" name=\"mediaSize\" min=\"20\" max=\"80\" step=\"5\" value=\"50\">\n        <select title=\"Kaarten\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Achtergrondafbeelding\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Achtergrondkleur\" value=\"#f9af17\" selected>\n            <input type=\"video\" title=\"Achtergrondvideo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Dekkleur\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Doorschijnendheid\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">   \n        <div class=\"col-md-12\">\n            <div class=\"media-container-row\">\n                <div class=\"mbr-figure m-auto\" mbr-style=\"{'width': mediaSize + '%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/corona-581x829.jpg\" alt=\"Mobirise\" title>\n                </div>\n                <div class=\" align-left aside-content\">\n                    <h2 class=\"mbr-title pt-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Reserveringen en Coronavirus&nbsp;</h2>\n                    <div class=\"mbr-section-text\">\n                        <p class=\"mbr-text mb-5 pt-3 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Beste klant,<br><br>Wij vinden de situatie rondom het dierenepension ivm het corona virus ook erg vervelend. Dit is een moeilijke situatie voor ons allemaal.\n<br><br>Bij annuleringen zijn wij helaas genoodzaakt de kosten in rekening te brengen. Tenzij u een andere periode wilt reserveren met het zelfde aantal dagen.\n<br>Let hierbij wel op, van 13 juli t/m 16 augustus zitten we volledig vol!\n<br>\n<br>Daarnaast bij elke reservering die u maakt gaat u akkoord met onze pension voorwaarden.\n<br>Wij hebben deze netjes vermeld op onze website zodat het vrij toegankelijk is.\n<br>In elke bevestiging, mail en bij een online boeking komt dit in beeld te staan.\n<br>\n<br>Nogmaals wij vinden het ook erg moeilijk.\n<br>En blijven onze diensten ter beschikking stellen voor zolang dit ook gaat. Zodra er meer informatie is zullen wij dit ook bekend maken.<br></p>\n                    </div>\n\n                    <div class=\"block-content\" mbr-if=\"showTextHead||showText||showIcons\">\n                        <div class=\"card p-3 pr-3\">\n                            <div class=\"media\">\n                                <div class=\" align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <a href=\"https://goblinfarm.nl/pensionreglement.html\" target=\"_blank\"><span mbr-icon class=\"mbr-iconfont mbri-info\"></span></a>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\">Klik op het logo en u gaat naar onze pensionvoorwaarden</h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                            </div>\n                        </div>\n\n                        <div class=\"card p-3 pr-3\" mbr-if=\"cardsAmount > 1\">\n                            <div class=\"media\">\n                                <div class=\"align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <span mbr-icon class=\"mbri-drag-n-drop2 mbr-iconfont\"></span>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\">\n                                        Makkelijk en eenvoudig in gebruik\n                                    </h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                                    Verkort de ontwikkeltijd met een drag-en-drop website builder. Plaats de blocks op de pagina, bewerk de inhoud inline en publiceer - geen technische vaardigheden vereist.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div> \n    </div>          \n</section>",
+          "_cid": "rTdSxhoNQU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features11-4v"
+        },
         {
           "_styles": {
             ".navbar": {
@@ -467,31 +592,6 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "H1": {
-              "color": "#149dcc"
-            }
-          },
-          "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermvullend\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Toon titel\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Toon ondertitel\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Toon tekst\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Toon knoppen\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Achtergrondafbeelding\" value=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1276.jpg\" parallax selected>\n            <input type=\"color\" title=\"Achtergrondkleur\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Achtergrondvideo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Dekkleur\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Doorschijnendheid\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Welkom op de website van Dierenpension Goblin Farm!</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Per 1 oktober 2017 heb ik, Annabel Faase, dierenpension Goblin Farm overgenomen. Deze overname betekent voor mij dat mijn droom is uitgekomen. Als klein kind had ik al veel met dieren. Thuis hadden we dan ook van alles: van geiten tot kippen, van cavia's tot honden! Met veel liefde en toewijding ben ik dagelijks bezig mijn pensiongasten een zo prettig mogelijk verblijf te geven. \n<br>Kijk rustig rond op onze site, mochten er vragen zijn dan staan wij u graag te woord. \n<br>\n<br>                       ~Annabel</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbr-iconfont mbri-file\"></span>LEER MEER</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "rF97w2SLhg",
-          "_anchor": "header1-4e",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
           "_params": {}
         },
         {
