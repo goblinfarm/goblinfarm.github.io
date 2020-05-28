@@ -7221,14 +7221,81 @@ section.lazy-placeholder:after {
   padding-bottom: 120px;
   background-image: url("../../../assets/images/mbr-5-1920x1280.jpg");
 }
-.cid-r1tVZE39fd {
+.cid-s0hSUrS1t0 {
   padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
+  padding-bottom: 0px;
+  position: relative;
+  background-color: #e1f2f7;
 }
-.cid-r1tVZE39fd .mbr-section-subtitle {
+.cid-s0hSUrS1t0 .card {
+  border-radius: 0px;
+  margin-bottom: -1px;
+}
+.cid-s0hSUrS1t0 .card .card-header {
+  border-radius: 0px;
+  border: 0px;
+  padding: 0;
+}
+.cid-s0hSUrS1t0 .card .card-header a.panel-title {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  text-decoration: none !important;
+  margin-top: -1px;
+  line-height: normal;
+}
+.cid-s0hSUrS1t0 .card .card-header a.panel-title:focus {
+  text-decoration: none !important;
+}
+.cid-s0hSUrS1t0 .card .card-header a.panel-title h4 {
+  padding: 1.3rem 2rem;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0;
+}
+.cid-s0hSUrS1t0 .card .card-header a.panel-title h4 .sign {
+  padding-right: 1rem;
+}
+.cid-s0hSUrS1t0 .card .panel-body {
   color: #767676;
-  text-align: left;
+}
+.cid-s0hU2GqZOr {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #e1f2f7;
+}
+.cid-s0hU2GqZOr .card {
+  border-radius: 0px;
+  margin-bottom: -1px;
+}
+.cid-s0hU2GqZOr .card .card-header {
+  border-radius: 0px;
+  border: 0px;
+  padding: 0;
+}
+.cid-s0hU2GqZOr .card .card-header a.panel-title {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  text-decoration: none !important;
+  margin-top: -1px;
+  line-height: normal;
+}
+.cid-s0hU2GqZOr .card .card-header a.panel-title:focus {
+  text-decoration: none !important;
+}
+.cid-s0hU2GqZOr .card .card-header a.panel-title h4 {
+  padding: 1.3rem 2rem;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 0;
+}
+.cid-s0hU2GqZOr .card .card-header a.panel-title h4 .sign {
+  padding-right: 1rem;
+}
+.cid-s0hU2GqZOr .card .panel-body {
+  color: #767676;
 }
 .cid-rZleMgShpG {
   padding-top: 60px;
